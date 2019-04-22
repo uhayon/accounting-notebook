@@ -25,6 +25,6 @@ app.get('/transactions', (req, res) => handleGetAllTransactions(req, res, accoun
 app.post('/transactions', handlePostTransaction(accountState));
 app.get('/transactions/:id', (req, res) => handleGetSingleTransaction(req, res, accountState.transactionsHistory));
 
-app.listen(3000, () => {
-  console.log('App running on port 3000');
+app.listen(3001, () => {
+  console.log('App running on port 3001');
 })
